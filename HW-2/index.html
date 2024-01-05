@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      h1 {
+        text-align: center;
+        color: darkgreen;
+      }
+      #product-reviews {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        border: 1px solid darkgreen;
+      }
+      .product {
+        padding: 20px;
+      }
+      .product:not(:first-child) {
+        border-top: 1px solid darkgreen;
+      }
+    </style>
+    <script src="1.js" defer></script>
+    <script src="2.js" defer></script>
+  </head>
+  <body>
+    <h1>Product Reviews</h1>
+    <div id="product-reviews"></div>
+  </body>
+</html>
