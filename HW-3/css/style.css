@@ -1,0 +1,305 @@
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+*:focus {
+  outline: none;
+}
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, system-ui, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, Helvetica Neue, Helvetica, roboto, arial;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  font-size: 16px;
+  line-height: 20px;
+  overflow-y: scroll;
+  background-color: aliceblue;
+}
+a {
+  outline: none;
+  color: inherit;
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+  object-fit: cover;
+}
+svg {
+  fill: inherit;
+  stroke: inherit;
+  transition: fill 0.5s ease;
+  -webkit-transition: fill 0.5s ease;
+  -moz-transition: fill 0.5s ease;
+  -ms-transition: fill 0.5s ease;
+  -o-transition: fill 0.5s ease;
+}
+path,
+circle {
+  transition: fill 0.5s ease;
+}
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.btn-reset {
+  padding: 0;
+  border: none;
+  outline: none;
+  text-align: center;
+  color: #000000;
+  background-color: transparent;
+  cursor: pointer;
+}
+.list-reset {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+.input-reset {
+  padding: 0;
+  -webkit-appearance: none;
+  appearance: none;
+  border: none;
+  resize: none;
+  outline: none;
+  border-radius: 0;
+  background-color: transparent;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.home__title {
+  text-align: center;
+  font-size: 45px;
+  line-height: normal;
+}
+.home__btn,
+.add__btn-home,
+.view__btn-home {
+  display: block;
+  margin: 0 auto;
+  padding: 20px 20px;
+  border: 1px solid black;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  box-shadow: 0px 0px 10px 1px black;
+  transition-property: background-color, color;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in;
+  font-size: 20px;
+  line-height: normal;
+}
+.home__btn:hover,
+.add__btn-home:hover,
+.view__btn-home:hover {
+  background-color: black;
+  color: white;
+}
+.add__btn-home,
+.view__btn-home {
+  margin: 0 20px 20px 0;
+  align-self: flex-end;
+}
+.add__section,
+.view__section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+}
+.add__title,
+.view__title {
+  margin: 0;
+  padding-bottom: 10px;
+  text-align: center;
+  font-size: 40px;
+  line-height: normal;
+  background-color: rgb(36, 199, 145);
+}
+.add__wrapper,
+.view__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 20px 0;
+  background-color: rgb(167, 226, 206);
+  border-bottom: 63px solid rgb(36, 199, 145);
+  border-right: 63px solid rgb(36, 199, 145);
+  border-left: 63px solid rgb(36, 199, 145);
+}
+.view__wrapper {
+  padding: 0;
+}
+.add__form-name,
+.add__form-review {
+  margin-bottom: 20px;
+}
+
+.add__form {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 1px black;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.add__input-name,
+.add__textarea-review {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: 1px solid gray;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.add__btn,
+.add__btn-next,
+.view__btn-next {
+  align-self: center;
+  padding: 5px 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  box-shadow: 0px 0px 5px 1px black;
+  transition-property: background-color, color;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in;
+}
+
+.add__btn:hover,
+.add__btn-next:hover,
+.view__btn-next:hover {
+  background-color: black;
+  color: white;
+}
+
+.add__wrapper-btn,
+.view__wrapper-btn {
+  display: flex;
+  align-self: stretch;
+  justify-content: center;
+}
+
+.add__btn-next,
+.view__btn-next {
+  margin: 50px 0;
+}
+
+.view__wrapper-btn {
+  order: 1;
+}
+
+.view__list {
+  width: 100%;
+  padding: 10px;
+}
+.view__item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border-bottom: 1px solid black;
+}
+.view__product-name {
+  margin: 0;
+  line-height: normal;
+}
+.view__product-review {
+  margin: 0;
+  line-height: normal;
+}
+
+.view__btn-delete-review:hover {
+  background-color: darkred;
+  color: whitesmoke;
+}
+.view__product-review-list {
+  margin-top: 5px;
+  margin-left: 35px;
+}
+.view__product-review-item {
+  position: relative;
+  margin-bottom: 5px;
+  list-style-type: decimal;
+}
+.view__btn-delete-review {
+  position: absolute;
+  top: 4px;
+  left: -35px;
+  padding: 3px;
+  border-radius: 5px;
+  background-color: red;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  color: white;
+  font-weight: 700;
+  font-size: 7px;
+  line-height: normal;
+  transition-duration: 0.3s;
+  transition-property: background-color, color;
+  transition-timing-function: ease-in-out;
+}
+.hidden {
+  display: none;
+}
+.view__btn-show-hide {
+  align-self: center;
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+  line-height: normal;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  transition-duration: 0.3s;
+  transition-property: background-color, color;
+  transition-timing-function: ease-in-out;
+  background-color: rgb(3, 177, 139);
+}
+.view__btn-show-hide:hover {
+  background-color: rgb(0, 126, 98);
+  color: whitesmoke;
+}
+
+.view__btn-show-hide.close {
+  background-color: rgb(160, 177, 3);
+}

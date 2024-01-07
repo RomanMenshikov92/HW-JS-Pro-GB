@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>View review</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <script defer src="../js/viewReview.js"></script>
+    <script defer src="../js/localStorage.js"></script>
+    <script defer>
+      document.addEventListener("DOMContentLoaded", () => {
+        let homeBtn = document.querySelector(".view__btn-home");
+        homeBtn.addEventListener("click", () => (location.href = "../index.html"));
+      });
+    </script>
+  </head>
+  <body>
+    <section class="view__section">
+      <button class="view__btn-home btn-reset">Назад к главной</button>
+      <h1 class="view__title">Просмотр товаров по отзывам</h1>
+      <div id="content" class="view__wrapper">
+        <div class="view__wrapper-btn">
+          <button class="view__btn-next btn-reset">Перейти на страницу добавления отзывов</button>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

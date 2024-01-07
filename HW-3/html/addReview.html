@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add review</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <script defer src="../js/addReview.js"></script>
+    <script defer src="../js/localStorage.js"></script>
+    <script defer>
+      document.addEventListener("DOMContentLoaded", () => {
+        let homeBtn = document.querySelector(".add__btn-home");
+        homeBtn.addEventListener("click", () => (location.href = "../index.html"));
+      });
+    </script>
+  </head>
+  <body>
+    <div></div>
+    <section class="add__section">
+      <button class="add__btn-home btn-reset">Назад к главной</button>
+      <h1 class="add__title">Добавление отзыва к товару</h1>
+      <div class="add__wrapper">
+        <form class="add__form">
+          <div class="add__form-name">
+            <label class="add__label-name" for="product">Название продукта:</label><br />
+            <input class="add__input-name input-reset" type="text" id="product" name="product" placeholder="Введите название" />
+          </div>
+          <div class="add__form-review">
+            <label class="add__label-review" for="reviewText">Отзыв:</label><br />
+            <textarea class="add__textarea-review input-reset" id="reviewText" name="reviewText" placeholder="Введите отзыв"></textarea>
+          </div>
+          <button class="add__btn btn-reset" type="button">Добавить отзыв</button>
+        </form>
+        <div class="add__wrapper-btn">
+          <button class="add__btn-next btn-reset">Перейти на страницу просмотра всех товаров</button>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
